@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSMALA Documenter - Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1a1a;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header-title {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .video-wrapper {
+            width: 100%;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            background: #000;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 85vh;
+        }
+
+        .controls {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-back {
+            background: #555;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-back:hover {
+            background: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.95rem;
+            color: #888;
+            text-align: center;
+        }
+
+        .footer-date {
+            margin-bottom: 5px;
+        }
+
+        .footer-hashtag {
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .header-title {
+                font-size: 1.5rem;
+            }
+
+            .controls {
+                gap: 10px;
+            }
+
+            .btn-back {
+                padding: 10px 25px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title">ROSMALA DOCUMENTER</div>
+        </div>
+
+        <div class="video-wrapper">
+            <video controls controlsList="nodownload" poster="">
+                <source src="https://drive.google.com/uc?export=download&id=1_dVMgWPfQB9VIKsuodQZ2CezylDProWZ" type="video/mp4">
+                Maaf, video tidak dapat diputar di browser Anda. Silakan cek koneksi internet Anda.
+            </video>
+        </div>
+
+        <div class="controls">
+            <a href="index.html" class="btn-back">← Kembali ke Beranda</a>
+        </div>
+
+        <div class="footer">
+            <div class="footer-date">29 Januari 2026</div>
+            <div class="footer-hashtag">#Forssalampung</div>
+        </div>
+    </div>
+</body>
+</html>
